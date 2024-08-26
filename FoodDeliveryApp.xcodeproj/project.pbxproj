@@ -12,6 +12,8 @@
 		5C3766572C6B7C09003FDBC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3766562C6B7C09003FDBC5 /* ViewController.swift */; };
 		5C37665C2C6B7C0A003FDBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C37665B2C6B7C0A003FDBC5 /* Assets.xcassets */; };
 		5C37665F2C6B7C0A003FDBC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C37665D2C6B7C0A003FDBC5 /* LaunchScreen.storyboard */; };
+		5C79D1C22C7CB93E00CD949C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79D1C12C7CB93E00CD949C /* AppCoordinator.swift */; };
+		5C79D1C52C7CC06F00CD949C /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C79D1C42C7CC06F00CD949C /* OnboardingCoordinator.swift */; };
 		5C930A662C768E8E00EB66CD /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C930A592C768E8E00EB66CD /* Roboto-Medium.ttf */; };
 		5C930A672C768E8E00EB66CD /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C930A5A2C768E8E00EB66CD /* Roboto-Light.ttf */; };
 		5C930A682C768E8E00EB66CD /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C930A5B2C768E8E00EB66CD /* Roboto-Regular.ttf */; };
@@ -39,6 +41,8 @@
 		5C37665B2C6B7C0A003FDBC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C37665E2C6B7C0A003FDBC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C3766602C6B7C0A003FDBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C79D1C12C7CB93E00CD949C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5C79D1C42C7CC06F00CD949C /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		5C930A592C768E8E00EB66CD /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		5C930A5A2C768E8E00EB66CD /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		5C930A5B2C768E8E00EB66CD /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				5C930A7D2C77742900EB66CD /* Coordinator.swift */,
+				5C79D1C12C7CB93E00CD949C /* AppCoordinator.swift */,
+				5C79D1C42C7CC06F00CD949C /* OnboardingCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			files = (
 				5C3766572C6B7C09003FDBC5 /* ViewController.swift in Sources */,
 				5C3766532C6B7C09003FDBC5 /* AppDelegate.swift in Sources */,
+				5C79D1C52C7CC06F00CD949C /* OnboardingCoordinator.swift in Sources */,
 				5C930A752C76914700EB66CD /* UIFont+Extension.swift in Sources */,
 				5C930A792C7753C800EB66CD /* AppColors.swift in Sources */,
+				5C79D1C22C7CB93E00CD949C /* AppCoordinator.swift in Sources */,
 				5C3766552C6B7C09003FDBC5 /* SceneDelegate.swift in Sources */,
 				5C930A772C77527F00EB66CD /* UIColor+Extension.swift in Sources */,
 				5C930A7E2C77742900EB66CD /* Coordinator.swift in Sources */,
