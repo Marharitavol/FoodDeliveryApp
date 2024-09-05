@@ -38,6 +38,7 @@
 		5C930A772C77527F00EB66CD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C930A762C77527F00EB66CD /* UIColor+Extension.swift */; };
 		5C930A792C7753C800EB66CD /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C930A782C7753C800EB66CD /* AppColors.swift */; };
 		5C930A7E2C77742900EB66CD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C930A7D2C77742900EB66CD /* Coordinator.swift */; };
+		5CC2EB3C2C80976A00FB68B5 /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2EB3B2C80976A00FB68B5 /* OnboardingPartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		5C930A762C77527F00EB66CD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		5C930A782C7753C800EB66CD /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		5C930A7D2C77742900EB66CD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5CC2EB3B2C80976A00FB68B5 /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				5C60A8722C7E152D007306B4 /* OnboardingViewController.swift */,
 				5C60A8742C7E1676007306B4 /* OnboardingViewPresenter.swift */,
+				5CC2EB3B2C80976A00FB68B5 /* OnboardingPartViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				5C60A86B2C7D1CA2007306B4 /* ListCoordinator.swift in Sources */,
 				5C79D1C72C7D138E00CD949C /* HomeCoordinator.swift in Sources */,
 				5C60A86F2C7D1E67007306B4 /* TabBarController.swift in Sources */,
+				5CC2EB3C2C80976A00FB68B5 /* OnboardingPartViewController.swift in Sources */,
 				5C930A772C77527F00EB66CD /* UIColor+Extension.swift in Sources */,
 				5C60A8752C7E1676007306B4 /* OnboardingViewPresenter.swift in Sources */,
 				5C930A7E2C77742900EB66CD /* Coordinator.swift in Sources */,
