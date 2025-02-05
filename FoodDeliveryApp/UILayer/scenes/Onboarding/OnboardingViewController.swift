@@ -18,7 +18,7 @@ class OnboardingViewController: UIViewController {
     
     private var pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     private let pageControl = UIPageControl()
-    private let bottomButton = UIButton()
+    private let bottomButton = FDButton()
     var viewOutPut: OnboardingViewOutput!
     
     init(pages: [OnboardingPartViewController] = [OnboardingPartViewController](), viewOutPut: OnboardingViewOutput!) {
@@ -47,15 +47,15 @@ private extension OnboardingViewController {
         case 0:
             pageControl.currentPage = 1
             pageViewController.setViewControllers([pages[1]], direction: .forward, animated: true, completion: nil)
-            bottomButton.setTitle(pages[1].buttonText, for: .normal)
+            bottomButton.setTitle(pages[1].buttonText)
         case 1:
             pageControl.currentPage = 2
             pageViewController.setViewControllers([pages[2]], direction: .forward, animated: true, completion: nil)
-            bottomButton.setTitle(pages[2].buttonText, for: .normal)
+            bottomButton.setTitle(pages[2].buttonText)
         case 2:
             pageControl.currentPage = 3
             pageViewController.setViewControllers([pages[3]], direction: .forward, animated: true, completion: nil)
-            bottomButton.setTitle(pages[3].buttonText, for: .normal)
+            bottomButton.setTitle(pages[3].buttonText)
         case 3:
             print("Exit")
             viewOutPut.onboardingFinish()
@@ -80,7 +80,6 @@ extension OnboardingViewController {
         addChild(pageViewController)
         view.addSubview(pageViewController.view)
         pageViewController.didMove(toParent: self)
-        
     }
     
     func setupPageControl() {
@@ -88,7 +87,7 @@ extension OnboardingViewController {
         pageControl.currentPage = 0
         let page = pages[0]
         let title = page.buttonText
-        bottomButton.setTitle(title, for: .normal)
+        bottomButton.setTitle(title)
         pageControl.isUserInteractionEnabled = false
         
         pageControl.translatesAutoresizingMaskIntoConstraints = false
@@ -103,12 +102,9 @@ extension OnboardingViewController {
     
     func setupButton() {
         view.addSubview(bottomButton)
-        bottomButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         bottomButton.translatesAutoresizingMaskIntoConstraints = false
-        bottomButton.backgroundColor = AppColors.grey
-        bottomButton.titleLabel?.font = .Roboto.bold.size(of: 18)
-        bottomButton.setTitleColor(AppColors.black, for: .normal)
-        bottomButton.layer.cornerRadius = 24
+        bottomButton.action = buttonPressed
+        bottomButton.scheme = .gray
         
         NSLayoutConstraint.activate([
         
@@ -139,7 +135,6 @@ extension OnboardingViewController: UIPageViewControllerDataSource {
     }
 }
 
-
 // MARK: - UIPageViewControllerDelegate
 
 extension OnboardingViewController: UIPageViewControllerDelegate {
@@ -148,7 +143,7 @@ extension OnboardingViewController: UIPageViewControllerDelegate {
             pageControl.currentPage = index
             let page = pages[index]
             let title = page.buttonText
-            bottomButton.setTitle(title, for: .normal)
+            bottomButton.setTitle(title)
         }
     }
 }
